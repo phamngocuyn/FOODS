@@ -1,0 +1,11 @@
+<div  *ngIf="tags">
+    <a class="tag" href="" *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">
+        {{tag.name}}({{tag.count}})
+    </a>
+</div>
+<div  *ngIf="foodPageTags">
+    <a class="tag" href="" *ngFor="let tagName of foodPageTags" routerLink="/tag/{{tagName}}">
+        {{tagName}}
+    </a>
+</div>
+
